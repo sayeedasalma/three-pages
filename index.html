@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Globe trotting</title>
+    </head>
+	<body>
+    <section id="banner">
+    	<div class="banner-text">
+    		<h1>Andes Mountains</h1>
+    		<p>The Andes, running along South America's western side, is among the world's longest mountain ranges. Its varied terrain encompasses glaciers, volcanoes, grassland, desert, lakes and forest. </p>
+    		<div class="banner-btn">
+    			<a href="page2.html"><span></span>The Himalayas</a>
+    			<a href="page3.html"><span></span>The Alps</a>
+            </div>
+    	</div>
+    </section>
+
+    <div id="sideNav">
+    	<nav>
+    		<ul>
+    			<li><a href="#">Home</a></li>
+    			<li><a href="#">Features</a></li>
+    			<li><a href="#">Meet Us</a></li>
+    		</ul>
+    	</nav>
+    </div>
+    <div id="menubtn">
+    	<img src="menu-icon.png" id="menu" alt="Open Navigation Menu">
+    	
+    </div>
+
+<!--features-->
+
+
+
+
+
+    <script>
+    	var menubtn = document.getElementById("menubtn")
+    	var sideNav = document.getElementById("sideNav")
+    	var menu = document.getElementById("menu")
+
+    	sideNav.style.right == "180px";
+
+    	menubtn.onclick =function(){
+    		if(sideNav.style.right == "-180px"){
+    			sideNav.style.right = "0";
+    			menu.src = "close.png"
+    		}
+    		else{
+    			sideNav.style.right = "-180px";
+    			menu.src = "menu-icon.png";
+    		}
+    	}
+    </script>
+
+	</body>
+ 		
+  
+</html>
